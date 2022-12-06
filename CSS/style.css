@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+
+:root{
+ --yellow : #fcda68;
+ --black : #222222;
+ --purple: #8E7BEF;
+ --gray : #423f40;
+ --white : #FFFFFF;
+ --light : #F9F5F2;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+img{
+ max-width: 100%;
+}
+
+body{
+ font-family: 'Inter', sans-serif;
+}
+
+.header-content{
+ background-color: var(--white);
+}
+
+.navbar{
+ padding: 1rem 1.5rem;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+}
+
+.navbar-desktop{
+ display: none;
+}
+
+.header-information{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ justify-content: left;
+ padding: 1rem 1rem 1rem;
+ gap: 3rem;
+}
+
+.header-img-container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ justify-content: space-between;
+ height: 400px;
+}
+
+.header-img {
+ margin: 1.5rem;
+ height: 400px;
+ }
+
+.img-perfil{
+ height: 350px;
+}
+
+
+.header-information h1{
+ font-size: 2.5rem;
+ margin: 1rem;
+}
+
+.header-information h2{
+ font-size: 1rem;
+ margin: 2rem;
+}
+ 
+
+.span1{
+ color: var(--purple);
+}
+
+.span2 {
+ color: var(--gray);
+}
+
+.social-container{
+ width: 75%;
+ display: flex;
+ gap: 1.5rem;
+ justify-content: center;
+ align-items: center;
+ max-width: 400px;
+}
+
+.social-circle{
+ background-color: var(--purple);
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.header-contac{
+ margin: 0 auto;
+ text-align: center;
+}
+
+button {
+ display: flex;
+ width: 207px;
+ background-color: var(--purple);
+ margin: 0 auto;
+ max-width: 400px;
+ text-align: center;
+ color: var(--light);
+ align-items: center;
+ border-bottom-color: var(--purple);
+ justify-content: space-evenly;
+ padding: 0.5rem;
+ border: none;
+}
+
+
+
+@media screen and (min-width:992px){
+
+ .navbar{
+  display: none;
+ }
+
+ .navbar-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding: 1rem 1.5rem;
+  margin: 1rem;
+  width: 90%;
+  }
+
+ .navbar-desktop a{
+  padding: 1rem;
+  color: var(--black);
+  text-decoration: none;
+ }
+
+ a:first-child {
+  color: var(--purple);
+  font-weight: 600;
+ }
+
+ .header-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+ }
+ .header-information{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  justify-content: left;
+  justify-items: left;
+  padding: 1rem 1rem 1rem;
+
+ }
+
+ .header-information h1{
+  font-size: 3rem;
+  margin: 1rem;
+ }
+ 
+ .header-information h2{
+  font-size: 1.5rem;
+  margin: 1.5rem;
+ }
+
+ .social-container{
+  display: flex;
+  text-align: left;
+  justify-content: left;
+ }
+ 
+ .social-circle{
+  background-color: var(--purple);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .header-contac{
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  text-align: left;
+  padding: 1rem 1rem 1rem;
+ }
+
+ button {
+  display: flex;
+  width: 207px;
+  background-color: var(--purple);
+  max-width: 400px;
+  text-align: left;
+  color: var(--light);
+  align-items: left;
+  border-bottom-color: var(--purple);
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  border: none;
+ }
+ .header-img-container-desktop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+ }
+ 
+ .header-img-desktop{
+  margin: 1.5rem;
+ }
+
+}
+
+main {
+ padding: 3rem;
+}
+
+.experience-and-skills{
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 3rem;
+ background-color: var(--yellow);
+ gap: 2rem;
+ padding: 2.5rem 0;
+ justify-content: center;
+ text-align: center;
+}
+
+.info-experience-1 h2{
+ justify-content: left;
+ padding: 1rem;
+}
+
+
+.info-experience-1 p{
+ justify-content: left;
+ padding: 1rem;
+}
+
+
+
+.icon-skills{
+ padding: 1.5rem;
+}
+
+.experience-and-skills h3{
+ text-align: left;
+ padding: 1rem;
+}
+
+.experience{
+ padding-top: 3rem;
+}
+
+.table-experience{
+ padding: 1rem;
+}
+
+.company{
+ padding-left: 3rem;
+ text-align: left;
+}
+
+.job {
+ color: var(--black);
+ font-weight: 600;
+}
+
+hr {
+ background-color: var(--black);
+}
+
+.experience-data{
+ display: flex;
+ flex-direction: row;
+}
+
+.company{
+ display: flex;
+ flex-direction: column;
+}
+
+.table-separator{
+ width: 3px;
+}
+
+
+@media screen and (min-width:992px){
+ .experience-and-skills{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .info-experience{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+ }
+ .info-experience-1{
+  width: 50%;
+ }
+ .info-experience-1 h2{
+  text-align: left;
+ }
+
+ .info-experience-1 p{
+  text-align: left;
+ }
+
+ .skills{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .articles-experience{
+  display: flex;
+  flex-direction: row;
+ }
+
+
+ .icon-skills{
+  padding: 2rem;
+  width: 25%;
+ }
+
+ .experience{
+  padding-top: 0;
+  width: 50%;
+ }
+
+}
+
+.portafolio-articles {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ gap: 1rem;
+ margin-top: 3rem;
+} 
+
+.portafolio h3{
+ color: var(--purple);
+ font-weight: 600;
+}
+
+.ejemplo3 {
+ padding: 0.8rem;
+}
+.portafolio img{
+ justify-content: center;
+}
+
+.portafolio h2{
+ text-align: center;
+}
+
+
+@media screen and (min-width:992px){
+ .portafolio-articles{
+  display: flex;
+  flex-direction: row;
+ }
+}
+
+
+.contac-me {
+ margin: 3rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+
+.contac-info{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ text-align: center;
+ gap: 4rem;
+ width: 50%;
+ padding-top: 5rem;
+ 
+}
+
+
+.button-info{
+ background-color: var(--light);
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ gap: 2rem;
+}
+
+@media screen and (min-width:992px){
+ .button-info{
+  border-radius: 20%;
+}
+}
+
+
+.contac-phone .contac-mail{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ width: 50%;
+ padding: 1rem;
+
+}
+
+
+.contac-me p{
+ font-size: 0.8rem;
+}
+
+.contac-me span{
+ color: var(--black);
+ font-weight: 600;
+}
+
+footer{
+ text-align: center;
+ color: var(--purple);
+ font-size: 0.7rem;
+ margin-bottom: 2rem;
+}
+
+
+
+
+
+
